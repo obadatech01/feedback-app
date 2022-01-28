@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Create</title>
+
+  <!-- start font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- end font-awesome -->
+
+  <!-- start css -->
+  <link rel="stylesheet" href="css/feedback-edit.css">
+  <!-- start css -->
+
+</head>
+<body>
+  
+  <div class="container">
+    <a href="/index.html"><i class="fas fa-angle-left"></i> Go Back</a>
+    <i class="fas fa-pen-nib"></i>
+    <div class="main">
+      <form class="form-group">
+        <h3>Editing 'Add a dark theme option'</h3>
+        <div class="group-item">
+          <label for="title">Feedback Title</label>
+          <span>Add a short, descriptive headline</span>
+          <input type="text" name="title" id="title" value="Add a dark theme option" required>
+          <span>Title is required</span>
+        </div>
+
+        <div class="group-item">
+          <label for="category">Category</label>
+          <span>Choose a category for your feedback</span>
+          <select name="category" id="category"  required>
+            <option>select category...</option>
+            <option value="ui">Ui</option>
+            <option value="ux">Ux</option>
+            <option value="enhancement">Enhancement</option>
+            <option value="bug">Bug</option>
+            <option value="feature" selected>Feature</option>
+          </select>
+          <span>Title is required</span>
+        </div>
+
+        <div class="group-item">
+          <label for="title">Feedback Details</label>
+          <span>Include any specific comments on what should be improved, added, etc.</span>
+          <textarea rows="7">It would help people with light sensitivities and who prefer dark mode.</textarea>
+          <span>Title is required</span>
+        </div>
+
+        <div class="group-item">
+          <button>Delete</button>
+          <div>
+            <button>Cancel</button>
+            <button>Add Feedback</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Challenge by: <a target="_blank" href="https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6"> Frontend Mentor</a></p>
+    <p>Coded by: <a target="_blank" href="https://www.github.com/obadatech01"> Obada Yehia</a></p>
+  </footer>
+</body>
+</html>

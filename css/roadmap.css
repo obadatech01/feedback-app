@@ -1,0 +1,209 @@
+/* #373e68 , #f2f4ff , #5372ea , 
+    #8892e8 , #ad20eb , #444261 , 
+    #8791a4 , #cccccc , #3d4469
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: #f2f4ff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 70px auto;
+  transition: 0.4s;
+}
+
+.roadmap-header {
+  width: 100%;
+  height: 100px;
+  background-color: #373e68;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.roadmap-header_right a {
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #ad20eb;
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 1.6rem;
+}
+
+.roadmap-header_left {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+}
+
+.roadmap-header_left > a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.6rem;
+}
+
+.roadmap-header_left > p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.roadmap-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.roadmap-body .roadmap-content {
+  width: 30%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap-body .roadmap-content > div {
+  margin-bottom: 25px;
+}
+
+.roadmap-content .roadmap-content_title p {
+  margin-bottom: 5px;
+}
+
+.roadmap-content .roadmap-content_title p,
+.roadmap-content .roadmap-content_card > p {
+  color: #3d487a;
+  font-weight: bolder;
+}
+
+.roadmap-content .roadmap-content_title span,
+.roadmap-content .roadmap-content_card > span {
+  color: #7b8aab;
+  font-size: 12px;
+}
+
+.roadmap-content .roadmap-content_card {
+  width: 100%;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 2px 4px 5px 0px #d9dadf88;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.roadmap-content_card.planned {
+  border-top: 5px solid #f4a790;
+}
+
+.roadmap-content_card.in-progress {
+  border-top: 5px solid #b333ec;
+}
+
+.roadmap-content_card.live {
+  border-top: 5px solid #6fc1fa;
+}
+
+.roadmap-content .roadmap-content_card:hover {
+  transform: scale(1.03,1.03);
+}
+
+.roadmap-content .roadmap-content_card > span {
+  margin-bottom: 10px;
+}
+
+.roadmap-content .roadmap-content_card > span:nth-of-type(1) {
+  margin-left: 13px;
+}
+
+.roadmap-content .roadmap-content_card > span:nth-of-type(1)::before {
+  content: "";
+  padding: 4px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: -13px;
+  position: absolute;
+}
+
+.roadmap-content_card.planned > span:nth-of-type(1)::before {
+  background-color: #f4a790;
+}
+
+.roadmap-content_card.in-progress > span:nth-of-type(1)::before {
+  background-color: #b333ec;
+}
+
+.roadmap-content_card.live > span:nth-of-type(1)::before {
+  background-color: #6fc1fa;
+}
+
+.roadmap-content .roadmap-content_card > span:nth-of-type(3),
+.roadmap-content .roadmap-content_card .row-1 {
+  background-color: #f2f4ff;
+  color: #506fb9;
+  padding: 7px;
+  border-radius: 8px;
+  align-self: flex-start;
+  cursor: default;
+}
+
+.roadmap-content .roadmap-content_card > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.roadmap-content .roadmap-content_card .row-1 span,
+.roadmap-content .roadmap-content_card .row-2 span {
+  color: #3d487a;
+  font-weight: bolder;
+}
+
+.roadmap-content .roadmap-content_card .row-1:hover {
+  cursor: pointer;
+  background-color: rgb(182, 203, 250);
+}
+
+.roadmap-content .roadmap-content_card .row-2 {
+  align-self: center;
+}
+
+.roadmap-content .roadmap-content_card .row-2 i {
+  color: #cccccc;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #373e68;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer a {
+  color: white;
+  text-decoration: underline;
+  padding-left: 7px;
+}

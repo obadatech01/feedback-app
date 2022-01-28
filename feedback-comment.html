@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Create</title>
+
+  <!-- start font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- end font-awesome -->
+
+  <!-- start css -->
+  <link rel="stylesheet" href="css/feedback-comment.css">
+  <!-- start css -->
+
+</head>
+<body>
+  
+  <div class="container">
+    <div>
+      <a href="/index.html"><i class="fas fa-angle-left"></i> Go Back</a>
+      <a href="./feedback-edit.html">Edit Feedback</a>
+    </div>
+    <div class="row first">
+      <div class="col-1">
+        <i class="fas fa-angle-up"></i>
+        <span>40</span>
+      </div>
+      <div class="col-2">
+        <h2>Add image/video upload to feedback</h2>
+        <p>Images and screencasts can enhance comments on solutions.</p>
+        <span>enhancement</span>
+      </div>
+      <div class="col-3">
+        <i class="fas fa-comment"></i>  
+        <span>1</span>
+      </div>
+    </div>
+    <div class="row second">
+      <div class="comments">
+        <p>1 / Comments</p>
+        <div class="comments-body">
+          <div class="comments-body__">
+            <img src="./imgs/user-3.png" width="40" height="40" alt="user-3" />
+            <div class="comments-body__content">
+              <p>Mohammad Khaled</p>
+              <span>@mohammad976</span>
+              <span>Good idea</span>
+            </div>
+          </div>
+          <a href="#">Reply</a>
+        </div>
+        <form action="">
+          <textarea name="reply" id="" rows="7" placeholder="your reply"></textarea>
+          <button><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <hr />
+      <div class="comments two">
+        <p>1 / Comments</p>
+        <div class="comments-body">
+          <div class="comments-body__">
+            <img src="./imgs/user-3.png" width="40" height="40" alt="user-3" />
+            <div class="comments-body__content">
+              <p>Mohammad Khaled</p>
+              <span>@mohammad976</span>
+              <span>Good idea</span>
+            </div>
+          </div>
+          <a href="#">Reply</a>
+        </div>
+        <form action="">
+          <textarea name="reply" id="" rows="7" placeholder="your reply"></textarea>
+          <button><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+      <hr />
+    </div>
+    <div class="row third">
+      <form class="form-group">
+        <div class="group-item">
+          <label for="title">Add Comment</label>
+          <textarea rows="7" placeholder="Type your comment here"></textarea>
+        </div>
+
+        <div class="group-item">
+          <span>0 / 255</span>
+          <button>Post Comment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>Challenge by: <a target="_blank" href="https://www.frontendmentor.io/challenges/product-feedback-app-wbvUYqjR6"> Frontend Mentor</a></p>
+    <p>Coded by: <a target="_blank" href="https://www.github.com/obadatech01"> Obada Yehia</a></p>
+  </footer>
+</body>
+</html>
